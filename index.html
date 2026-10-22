@@ -12,15 +12,17 @@
 
   <body>
     <div class="wrap">
-        <nav class="header_nav">
-          <a href="#home" class="hNav">Home</a>
-          <a href="#articles" class="hNav">Articles</a>
-          <a href="#about" class="hNav">About</a>
-        </nav>
+      <nav class="header_nav">
+        <a href="#" class="hNav active">Home</a>
+        <a href="#articles" class="hNav">Articles</a>
+        <a href="#about" class="hNav">About</a>
+      </nav>
       <header>
-        
         <div class="header_info">
-          <h1>The Roam <br> Report</h1>
+          <h1>
+            The Roam <br />
+            Report
+          </h1>
           <div class="logo">
             <img
               src="img/BG/4cbba677dc56b5c2dd2c0b78fc1e55bbb1b9941a.svg"
@@ -44,11 +46,11 @@
         </div>
         <!-- header_info -->
       </header>
-
+      <!-- <div id="home"></div> -->
       <main>
         <section class="s1">
           <div class="s_con">
-            <a href="#Articles">
+            <a href="#">
               <div class="s_img">
                 <img
                   src="img/BG/02296b5b8a49a0b0cd76e320f03ed2e486874615.jfif"
@@ -69,14 +71,14 @@
             </div>
           </div>
         </section>
-        <section class="s2" id="home">
+        <section class="s2" id="articles">
           <h2>Latest travel stories</h2>
 
           <div class="story-list" id="story-list"></div>
 
           <template id="story-template">
             <div class="s_con">
-              <a href="#Articles">
+              <a href="#">
                 <div class="s_img">
                   <img src="" alt="" />
                 </div>
@@ -87,99 +89,124 @@
               </a>
             </div>
           </template>
-          <p><a href="#Articles">View all articles</a></p>
+          <p><a href="#articles">View all articles</a></p>
         </section>
 
         <section class="s3">
-            <h2>Upcoming itinerary</h2>
-            <ul>
-                <li>
-                    <div class="sp">
-                      <h3>01</h3>
-                      <dl>
-                          <dt>Oaxaca, Mexico</dt>
-                          <dd>March 12 - March 25 <br>
-                              For mole, markets, and Monte Albán</dd>
-                      </dl>
-                    </div>
-                    <div class="s3_img">
-                        <img src="img/BG/f669452d8f3eab822162e91fd5ba08c463d1576e.png" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="sp">
-                      <h3>02</h3>
-                      <dl>
-                          <dt>Rome, Italy</dt>
-                          <dd>June 9 - June 30 <br>
-                              Evening walks and neighborhood trattorias</dd>
-                      </dl>
-                    </div>
-                    <div class="s3_img">
-                        <img src="img/BG/0e0ef136b56b9acc9ccc970f1b9f5ff9c3333e88.jfif" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="sp">
-                      <h3>03</h3>
-                      <dl>
-                          <dt>Lofoten, Norway</dt>
-                          <dd>October 20 - October 28 <br>
-                              Midnight sun, damp air, and drying cod</dd>
-                      </dl>
-                    </div>
-                    <div class="s3_img">
-                        <img src="img/BG/036634123c22007b1ebe20439c7620115ce0efea.jfif" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="sp">
-                      <h3>04</h3>
-                      <dl>
-                          <dt>Kagoshima, Japan</dt>
-                          <dd>Dec 3 - Dec 21 <br>
-                              Admire Sakurajima from the ferry</dd>
-                      </dl>
-                    </div>
-                    <div class="s3_img">
-                        <img src="img/BG/8dbc390779d2ec971f615198172a488a07464c10.jfif" alt="">
-                    </div>
-                </li>
-            </ul>
-            <div class="s3_bg">
-                <img src="img/BG/2fb2c63e238b649365ad7b5dbdac474f2efbe91c.svg" alt="">
-            </div>
+          <h2>Upcoming itinerary</h2>
+          <ul>
+            <li>
+              <div class="sp">
+                <h3>01</h3>
+                <dl>
+                  <dt>Oaxaca, Mexico</dt>
+                  <dd>
+                    March 12 - March 25 <br />
+                    For mole, markets, and Monte Albán
+                  </dd>
+                </dl>
+              </div>
+              <div class="s3_img">
+                <img
+                  src="img/BG/f669452d8f3eab822162e91fd5ba08c463d1576e.png"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li>
+              <div class="sp">
+                <h3>02</h3>
+                <dl>
+                  <dt>Rome, Italy</dt>
+                  <dd>
+                    June 9 - June 30 <br />
+                    Evening walks and neighborhood trattorias
+                  </dd>
+                </dl>
+              </div>
+              <div class="s3_img">
+                <img
+                  src="img/BG/0e0ef136b56b9acc9ccc970f1b9f5ff9c3333e88.jfif"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li>
+              <div class="sp">
+                <h3>03</h3>
+                <dl>
+                  <dt>Lofoten, Norway</dt>
+                  <dd>
+                    October 20 - October 28 <br />
+                    Midnight sun, damp air, and drying cod
+                  </dd>
+                </dl>
+              </div>
+              <div class="s3_img">
+                <img
+                  src="img/BG/036634123c22007b1ebe20439c7620115ce0efea.jfif"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li>
+              <div class="sp">
+                <h3>04</h3>
+                <dl>
+                  <dt>Kagoshima, Japan</dt>
+                  <dd>
+                    Dec 3 - Dec 21 <br />
+                    Admire Sakurajima from the ferry
+                  </dd>
+                </dl>
+              </div>
+              <div class="s3_img">
+                <img
+                  src="img/BG/8dbc390779d2ec971f615198172a488a07464c10.jfif"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+          <div class="s3_bg">
+            <img
+              src="img/BG/2fb2c63e238b649365ad7b5dbdac474f2efbe91c.svg"
+              alt=""
+            />
+          </div>
         </section>
-
       </main>
 
       <footer id="about">
         <p>End of the trail</p>
-        <h1>Less rush. <br> More wonder.</h1>
+        <h1>
+          Less rush. <br />
+          More wonder.
+        </h1>
         <div class="footer_info">
-            <a href="#home">Home</a>
-            <a href="#article">Article</Article></a>
-            <a href="#about">About</a>
-            <a href="#contect">Contect</a>
+          <a href="#home">Home</a>
+          <a href="#article">Article</a>
+          <a href="#about">About</a>
+          <a href="#contect">Contect</a>
         </div>
         <div class="footer_sns">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="img/icon/instagram.svg" alt="instagram">
-            </a>
-            <a href="https://kr.pinterest.com/" target="_blank">
-                <img src="img/icon/pinterest.svg" alt="pinterest">
-            </a>
-            <a href="youtube.com" target="_blank">
-                <img src="img/icon/youtube.svg" alt="youtube">
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="img/icon/facebook.svg" alt="facebook">
-            </a>
-            <a href="https://x.com" target="_blank">
-                <img src="img/icon/x.svg" alt="x">
-            </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="img/icon/instagram.svg" alt="instagram" />
+          </a>
+          <a href="https://kr.pinterest.com/" target="_blank">
+            <img src="img/icon/pinterest.svg" alt="pinterest" />
+          </a>
+          <a href="youtube.com" target="_blank">
+            <img src="img/icon/youtube.svg" alt="youtube" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="img/icon/facebook.svg" alt="facebook" />
+          </a>
+          <a href="https://x.com" target="_blank">
+            <img src="img/icon/x.svg" alt="x" />
+          </a>
         </div>
-        <p>Copyright ©2025  ·  The Roam Report</p>
+        <p>Copyright ©2025 · The Roam Report</p>
       </footer>
     </div>
     <!-- wrap -->

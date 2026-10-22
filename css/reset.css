@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+video{
+    display: block;
+    width: 100%;
+}
+button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+      }

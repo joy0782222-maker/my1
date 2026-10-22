@@ -1,0 +1,360 @@
+@import url("reset.css");
+@import url("responsive.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Luckiest+Guy&display=swap");
+
+.wrap {
+  display: block;
+  text-align: center;
+}
+
+.header_nav {
+  width: fit-content;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 30px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  box-shadow: 5px 5px 3px rgba(0, 83, 212, 0.08);
+  position: fixed;
+  top: 16px;
+  left: 240px; 
+  transform: translateX(-50%);
+  z-index: 20;
+}
+.header_nav a {
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+.header_nav a.active{
+  font-weight: bold;
+  
+}
+
+header {
+  width: 480px;
+  height: 100vh;
+  background-color: rgb(198, 220, 255);
+  padding: 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header_info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 2.5%;
+  color: rgb(0, 83, 212);
+  height: 100vh;
+}
+header h1{
+    padding-top: 150px;
+}
+h1 {
+  font-size: 5rem;
+  font-family: "Luckiest Guy", cursive;
+  line-height: 80px;
+  letter-spacing: 3px;
+}
+.logo img {
+  width: 120px;
+  height: 110px;
+}
+.header_info p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 15px 0;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 13s linear infinite;
+}
+.marquee-track span {
+  flex-shrink: 0;
+  padding-right: 30px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+main {
+  flex: 1;
+  margin-left: 480px;
+  width: calc(100% - 480px);
+  min-height: 100vh;
+}
+
+.s1 {
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(/img/BG/e287eb507ac75d413cc66b6fb40ab2026d637ffe.jfif)
+    center / cover no-repeat;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding-bottom: 50px;
+}
+.s_con {
+  width: 400px;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: auto;
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s;
+}
+.s_con:hover {
+  box-shadow: 10px 10px 3px rgba(0, 83, 212, 0.08);
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+.s_con .s_img {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.s_info {
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+.s_info * {
+  margin: 10px 0;
+}
+.s_info :first-child {
+  color: gray;
+  font-size: 0.875rem;
+}
+.s_info :last-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+.s1 > .s_down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s_down p {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.s_point {
+  height: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.s_point img {
+  width: 24px;
+  height: 24px;
+}
+
+.s2 {
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
+section h2 {
+  font-size: 2.6875rem;
+  padding: 80px 0;
+}
+.s2 > p > a {
+  display: inline-block;
+  margin: 50px 0;
+  border: 1px solid rgb(95, 109, 59);
+  border-radius: 20px;
+  padding: 15px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: rgb(95, 109, 59);
+}
+.s2 > p > a:hover {
+  background-color: rgb(95, 109, 59);
+  color: white;
+}
+.story-list {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  gap: 24px;
+  padding: 24px;
+  margin: auto;
+}
+
+.story-list .s_con {
+  width: 350px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.story-list .s_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .story-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.s3 {
+  position: relative;
+  display: flow-root;
+  background-color: rgb(95, 109, 59);
+  color: rgb(233, 249, 178);
+  z-index: 3;
+  width: 100%;
+  margin: auto;
+}
+.s3 > * {
+  width: 70%;
+  margin: auto;
+}
+.s3 ul {
+  padding-bottom: 100px;
+}
+.s3 ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dotted rgb(233, 249, 178);
+  height: 200px;
+  padding: 10px 0;
+}
+.s3 ul li:first-child {
+  border-top: 2px dotted rgb(233, 249, 178);
+}
+.s3 ul li .sp{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.s3 h3 {
+  font-size: 6.875rem;
+  letter-spacing: -10px;
+  font-weight: 100;
+}
+.s3 dl {
+  text-align: left;
+}
+.s3 dt {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 1.4375rem;
+}
+.s3_img {
+  width: 250px;
+  flex-shrink: 0;
+  margin-left: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.s3_bg {
+  width: 100%;
+}
+.s3_bg img {
+  width: 100%;
+}
+
+footer {
+  width: calc(100% - 480px);
+  min-height: 100px;
+  margin-left: 480px;
+  padding: 100px 0;
+  color: rgb(51, 33, 21);
+  background-color: rgb(249, 241, 226);
+  z-index: 3;
+  position: relative;
+  font-weight: 500;
+}
+footer h1{
+padding: 20px 0;
+}
+.footer_info{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer_info a{
+      transition: transform 0.2s;
+
+}
+.footer_info a:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+
+
+.footer_sns{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+.footer_sns a,
+.footer_sns a img{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.footer_sns a img{
+  transition: transform 0.3s;
+}
+.footer_sns a{
+  position: relative;
+  z-index: 1;
+  transition: all 1s;
+  
+}
+.footer_sns a img{
+  transition: all 0.3s;
+}
+.footer_sns a img:hover{
+  transform: translateY(-6px) rotate(8deg) scale(1.15);
+}
+.footer_sns a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: bisque;
+  z-index: -1;
+  transform: translate(5px, 5px);
+}

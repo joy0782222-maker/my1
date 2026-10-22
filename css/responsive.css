@@ -73,8 +73,24 @@ h1 {
   line-height: 50px;
 }
 
+.story-list {
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.story-list .s_con {
+  width: 100%;
+  min-width: 0;
+}
 
 
 
 
+
+}
+@media (max-width: 600px) {
+  .story-list {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px 16px;
+  }
 }

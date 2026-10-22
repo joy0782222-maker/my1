@@ -262,7 +262,7 @@ section h2 {
 }
 .s3 ul li .sp{
   display: flex;
-  gap: 50px;
+  gap: 10%;
   align-items: center;
 }
 .s3 h3 {

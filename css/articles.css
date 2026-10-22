@@ -1,0 +1,16 @@
+.bgimg {
+    position: relative;
+    padding-top: 100px;
+}
+
+.bgimg img:first-child {
+    display: block;
+    width: 100%;
+}
+
+.bgimg img:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    left: 0;
+}

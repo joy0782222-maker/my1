@@ -53,19 +53,23 @@ const stories = [
 const storyList = document.querySelector("#story-list");
 const storyTemplate = document.querySelector("#story-template");
 
-stories.forEach((story) => {
-    const card = storyTemplate.content.cloneNode(true);
+if (storyList && storyTemplate) {
+    stories.forEach((story) => {
+        const card = storyTemplate.content.cloneNode(true);
 
-    const link = card.querySelector("a");
-    const image = card.querySelector(".s_img img");
-    const date = card.querySelector(".story-date");
-    const title = card.querySelector(".story-title");
+        const link = card.querySelector("a");
+        const image = card.querySelector(".s_img img");
+        const date = card.querySelector(".story-date");
+        const title = card.querySelector(".story-title");
 
-    link.href = story.href;
-    image.src = story.image;
-    image.alt = story.title;
-    date.textContent = story.date;
-    title.textContent = story.title;
+        link.href = story.href;
+        image.src = story.image;
+        image.alt = story.title;
+        date.textContent = story.date;
+        title.textContent = story.title;
 
-    storyList.appendChild(card);
-});
+        storyList.appendChild(card);
+    });
+}
+
+

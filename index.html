@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="icon" href="img/Frame 1.png" />
+    <!-- <link rel="icon" href="img/Frame 1.png" /> -->
     <script src="js/main.js" defer></script>
   </head>
 
@@ -15,7 +16,7 @@
       <nav class="header_nav">
         <a href="index.html" class="hNav active">Home</a>
         <a href="articles.html" class="hNav">Articles</a>
-        <a href="#about" class="hNav">About</a>
+        <a href="about.html" class="hNav">About</a>
       </nav>
       <header>
         <div class="header_info">
@@ -72,24 +73,27 @@
           </div>
         </section>
         <section class="s2" id="articles">
-          <h2>Latest travel stories</h2>
+          <div class="s2-content">
+            <h2>Latest travel stories</h2>
 
-          <div class="story-list" id="story-list"></div>
+            <div class="story-list" id="story-list"></div>
 
-          <template id="story-template">
-            <div class="s_con">
-              <a href="#">
-                <div class="s_img">
-                  <img src="" alt="" />
-                </div>
-                <div class="s_info">
-                  <p class="story-date"></p>
-                  <p class="story-title"></p>
-                </div>
-              </a>
-            </div>
-          </template>
-          <p><a href="#articles">View all articles</a></p>
+            <template id="story-template">
+              <div class="s_con">
+                <a href="">
+                  <div class="s_img">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="s_info">
+                    <p class="story-date"></p>
+                    <p class="story-title"></p>
+                  </div>
+                </a>
+              </div>
+              </div>
+            </template>
+            <p><a href="articles.html">View all articles</a></p>
+          
         </section>
 
         <section class="s3">
@@ -184,9 +188,9 @@
           More wonder.
         </h1>
         <div class="footer_info">
-          <a href="#home">Home</a>
-          <a href="#article">Article</a>
-          <a href="#about">About</a>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Article</a>
+          <a href="about.html">About</a>
           <a href="#contect">Contect</a>
         </div>
         <div class="footer_sns">
@@ -196,7 +200,7 @@
           <a href="https://kr.pinterest.com/" target="_blank">
             <img src="img/icon/pinterest.svg" alt="pinterest" />
           </a>
-          <a href="youtube.com" target="_blank">
+          <a href="https://youtube.com" target="_blank">
             <img src="img/icon/youtube.svg" alt="youtube" />
           </a>
           <a href="https://www.facebook.com" target="_blank">

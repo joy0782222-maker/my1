@@ -80,6 +80,8 @@ h1 {
   overflow: hidden;
   white-space: nowrap;
   padding: 15px 0;
+  margin-top: 50px;
+  text-align: center;
 }
 .marquee-track {
   display: flex;
@@ -88,7 +90,6 @@ h1 {
 }
 .marquee-track span {
   flex-shrink: 0;
-  padding-right: 30px;
 }
 
 @keyframes scroll {
@@ -120,13 +121,19 @@ main {
   position: sticky;
   top: 0;
   z-index: 2;
-  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.s2-content{
+  width: 100%;
 }
 .s_con {
-  width: 400px;
+  width: 70%;
+  max-width: 400px;
   background-color: whitesmoke;
   padding: 10px;
   margin: auto;
+  display: flex;
+  align-items: center;
   transition:
     box-shadow 0.3s,
     transform 0.3s;
@@ -145,8 +152,8 @@ main {
   border-radius: 20px;
   margin-bottom: 30px;
 }
+
 .s_info {
-  margin: 0 10px;
   margin-bottom: 30px;
 }
 .s_info * {
@@ -190,11 +197,23 @@ main {
   z-index: 3;
   background-color: white;
 }
+.s2-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.s_con > a {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+.s_con > a > .s_img {
+  width: 100%;
+}
 section h2 {
   font-size: 2.6875rem;
   padding: 80px 0;
 }
-.s2 > p > a {
+.s2-content > p > a {
   display: inline-block;
   margin: 50px 0;
   border: 1px solid rgb(95, 109, 59);
@@ -205,29 +224,36 @@ section h2 {
   transition: all 0.2s;
   color: rgb(95, 109, 59);
 }
-.s2 > p > a:hover {
+.s2-content > p > a:hover {
   background-color: rgb(95, 109, 59);
   color: white;
 }
 .story-list {
-  width: fit-content;
+  width: 70%;
   display: grid;
-  grid-template-columns: repeat(2, 350px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  padding: 24px;
+  padding: 24px 0;
   margin: auto;
 }
 
 .story-list .s_con {
-  width: 350px;
+  width: 100%;
   margin: 0;
   box-sizing: border-box;
 }
 
+.story-list .s_img {
+  width: 100%;
+  /* height: 250px; */
+  aspect-ratio: 1/1;
+}
 .story-list .s_img img {
   width: 100%;
   height: 100%;
+  /* height: 100%; */
   object-fit: cover;
+
 }
 
 @media (max-width: 600px) {
@@ -289,9 +315,17 @@ section h2 {
 }
 .s3_bg {
   width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+
 }
 .s3_bg img {
   width: 100%;
+  top: -100%;
+  position: absolute;
+  
 }
 
 footer {

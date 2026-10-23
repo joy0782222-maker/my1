@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="img/Frame 1.png" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/articles.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -14,7 +15,7 @@
       <nav class="header_nav">
         <a href="index.html" class="hNav">Home</a>
         <a href="articles.html" class="hNav active">Articles</a>
-        <a href="#about" class="hNav">About</a>
+        <a href="about.html" class="hNav">About</a>
       </nav>
       <header>
         <div class="header_info">
@@ -47,23 +48,25 @@
       </header>
       <main>
         <section class="s2" id="articles">
-          <h2>All travel stories</h2>
+          <div class="s2-content">
+            <h2>All travel stories</h2>
 
-          <div class="story-list" id="story-list"></div>
+            <div class="story-list" id="story-list"></div>
 
-          <template id="story-template">
-            <div class="s_con">
-              <a href="#">
-                <div class="s_img">
-                  <img src="" alt="" />
-                </div>
-                <div class="s_info">
-                  <p class="story-date"></p>
-                  <p class="story-title"></p>
-                </div>
-              </a>
-            </div>
-          </template>
+            <template id="story-template">
+              <div class="s_con">
+                <a href="#">
+                  <div class="s_img">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="s_info">
+                    <p class="story-date"></p>
+                    <p class="story-title"></p>
+                  </div>
+                </a>
+              </div>
+            </template>
+          </div>
           <div class="bgimg">
             <img src="img/BG/33f3b056145bb7e7ab3c0ea693b0d1f2e71eaa2f.jfif" alt="">
             <img src="img/BG/9541d61708992bab607266e028f412d4e818dd29.svg" alt="">
@@ -80,8 +83,8 @@
         </h1>
         <div class="footer_info">
           <a href="index.html">Home</a>
-          <a href="#article">Article</a>
-          <a href="#about">About</a>
+          <a href="articles.html">Article</a>
+          <a href="about.html">About</a>
           <a href="#contect">Contect</a>
         </div>
         <div class="footer_sns">

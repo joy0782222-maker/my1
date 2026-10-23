@@ -18,12 +18,16 @@ html{
     backdrop-filter: blur(5px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);    
     color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s;
     cursor: grab;
     touch-action: none;
     user-select: none;
 }
 #goTop:hover{
     background-color: white;
+}
+#goTop.reset-background {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 #goTop.active{
     cursor: grabbing;

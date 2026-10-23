@@ -2,12 +2,6 @@
     const goTopB = document.querySelector("#goTop");
     if (!goTopB) return;
 
-    const savedY = localStorage.getItem("goTopY");
-    if (savedY !== null && Number.isFinite(Number(savedY))) {
-        goTopB.style.top = `${Number(savedY)}px`;
-        goTopB.style.bottom = "auto";
-    }
-
     let isDragging = false;
     let didDrag = false;
     let startX, startY;
@@ -32,10 +26,15 @@
             return;
         }
 
+        goTopB.classList.add("reset-background");
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
+    });
+
+    goTopB.addEventListener("pointerleave", () => {
+        goTopB.classList.remove("reset-background");
     });
 
     goTopB.addEventListener("pointerdown", (event) => {
@@ -87,7 +86,6 @@
             goTopB.style.right = "20px";
         }
 
-        localStorage.setItem("goTopY", String(top));
     };
 
     goTopB.addEventListener("pointerup", stopDragging);

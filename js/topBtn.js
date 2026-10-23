@@ -2,13 +2,27 @@
     const goTopB = document.querySelector("#goTop");
     if (!goTopB) return;
 
+    const savedY = localStorage.getItem("goTopY");
+    if (savedY !== null && Number.isFinite(Number(savedY))) {
+        goTopB.style.top = `${Number(savedY)}px`;
+        goTopB.style.bottom = "auto";
+    }
+
     let isDragging = false;
     let didDrag = false;
     let startX, startY;
     let startLeft, startTop;
 
+    const clampTop = (top) => {
+        const maxTop = Math.max(0, window.innerHeight - goTopB.offsetHeight);
+        return Math.max(0, Math.min(top, maxTop));
+    };
+
     const updateVisibility = () => {
         goTopB.classList.toggle("active", window.scrollY > 600);
+        if (goTopB.style.top) {
+            goTopB.style.top = `${clampTop(parseFloat(goTopB.style.top))}px`;
+        }
     };
 
     goTopB.addEventListener("click", (event) => {
@@ -58,10 +72,27 @@
 
     const stopDragging = () => {
         isDragging = false;
+        if (!didDrag) return;
+
+        const rect = goTopB.getBoundingClientRect();
+        const top = clampTop(rect.top);
+        goTopB.style.top = `${top}px`;
+        goTopB.style.bottom = "auto";
+
+        if (rect.left + rect.width / 2 < window.innerWidth / 2) {
+            goTopB.style.left = "20px";
+            goTopB.style.right = "auto";
+        } else {
+            goTopB.style.left = "auto";
+            goTopB.style.right = "20px";
+        }
+
+        localStorage.setItem("goTopY", String(top));
     };
 
     goTopB.addEventListener("pointerup", stopDragging);
     goTopB.addEventListener("pointercancel", stopDragging);
     window.addEventListener("scroll", updateVisibility);
+    window.addEventListener("resize", updateVisibility);
     updateVisibility();
 })();

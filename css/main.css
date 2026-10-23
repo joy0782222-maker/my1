@@ -190,6 +190,17 @@ main {
 .s_point img {
   width: 24px;
   height: 24px;
+  transition: all 0.5s;
+  animation: move 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translatey(2px);
+    }
+    to {
+        transform: translatey(0);
+    }
 }
 
 .s2 {

@@ -19,7 +19,9 @@
 .bgimg img:nth-child(2) {
     position: absolute;
     width: 100%;
-    top: 90%;
+    height: auto;
+    aspect-ratio: 800 / 126; /* 산 SVG 원래 비율 */
+    bottom: -1px; /* 사진 아랫단에 붙이기 (1px은 틈 방지) */
     left: 0;
 }
 

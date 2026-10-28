@@ -1,5 +1,7 @@
 # ✈️ The Roam Report
 
+### 🔗 [사이트 바로 보기](https://my1-delta-lac.vercel.app)
+
 > 여행 이야기와 사진을 모아 보여주는 **여행 블로그 웹사이트**
 > 혼자 처음 만든 **반응형 웹사이트**예요.
 > 화면 디자인은 [Figma 시안](https://sable-boil-40643239.figma.site/)을 참고했고, **코드는 HTML · CSS · JavaScript 전부 직접 작성**했어요.

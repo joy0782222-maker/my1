@@ -102,6 +102,5 @@ my1/
 ├─ index.html / articles.html / about.html
 ├─ css/     → main, 페이지별 스타일, responsive, reset, topBtn
 ├─ js/      → main, articles, about, topBtn
-├─ img/     → 배경 사진, 아이콘
-└─ fonts/   → 웹폰트
+└─ img/     → 배경 사진, 아이콘
 ```

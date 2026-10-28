@@ -11,9 +11,9 @@
 
 | 페이지 | 파일 | 내용 |
 |---|---|---|
-| 🏠 Home | [`index.html`](./index.html) | 메인 소개, 흐르는 배너, 추천 글, 최신 스토리 카드 |
+| 🏠 Home | [`index.html`](./index.html) | 메인 소개, 흐르는 배너, 추천 글, 최신 스토리 카드, 다가오는 여행 일정 |
 | 📰 Articles | [`articles.html`](./articles.html) | 전체 여행 스토리 목록 |
-| 🙋 About | [`about.html`](./about.html) | 소개 및 다가오는 여행 일정 |
+| 🙋 About | [`about.html`](./about.html) | 자기소개(About me)와 연락처(Contact) |
 
 <br>
 

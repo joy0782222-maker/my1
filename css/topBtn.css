@@ -35,3 +35,6 @@ html{
     color: black;
     
 }
+#goTop svg{
+    display: block;
+}
